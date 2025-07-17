@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TaskBoard – Productivity Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>📋 TaskBoard</h2>
+    <ul>
+      <li>🏠 Dashboard</li>
+      <li>✅ Tasks</li>
+      <li>📅 Calendar</li>
+      <li>⚙️ Settings</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <h1>Welcome Back, Madhvi 👋</h1>
+      <button class="toggle-theme" onclick="toggleTheme()">🌗 Toggle Theme</button>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Tasks Today</h3>
+        <p>5</p>
+      </div>
+      <div class="card">
+        <h3>Pending</h3>
+        <p>3</p>
+      </div>
+      <div class="card">
+        <h3>Completed</h3>
+        <p>2</p>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <h2>📊 Task Completion</h2>
+      <canvas id="taskChart" width="400" height="200"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
